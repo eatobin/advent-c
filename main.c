@@ -3,9 +3,9 @@
 
 int fuelValue(int mass) {
     float fvf = (float) mass / 3;
-    int fvu = (int) fvf;
-    fvu -= 2;
-    return fvu;
+    int fvi = (int) fvf;
+    fvi -= 2;
+    return fvi;
 }
 
 int recFuelValue(int mass) {
