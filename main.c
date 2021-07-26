@@ -1,30 +1,9 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-int fuelValue(int mass) {
-    float fvf = (float) mass / 3;
-    int fvi = (int) fvf;
-    fvi -= 2;
-    return fvi;
-}
+int fuelValue(int);
 
-int recFuelValue(int mass) {
-    int sum = 0;
-    while (1) {
-        int fuel = fuelValue(mass);
-        if (fuel <= 0) {
-            break;
-        }
-        sum += fuel;
-
-        mass = fuelValue(fuel);
-        if (mass <= 0) {
-            break;
-        }
-        sum += mass;
-    }
-    return sum;
-}
+int recFuelValue(int);
 
 int main(void) {
     FILE *fp;
@@ -60,3 +39,28 @@ int main(void) {
 
 //Part a: 3337766
 //Part b: 5003788
+
+int fuelValue(int mass) {
+    float fvf = (float) mass / 3;
+    int fvi = (int) fvf;
+    fvi -= 2;
+    return fvi;
+}
+
+int recFuelValue(int mass) {
+    int sum = 0;
+    while (1) {
+        int fuel = fuelValue(mass);
+        if (fuel <= 0) {
+            break;
+        }
+        sum += fuel;
+
+        mass = fuelValue(fuel);
+        if (mass <= 0) {
+            break;
+        }
+        sum += mass;
+    }
+    return sum;
+}
