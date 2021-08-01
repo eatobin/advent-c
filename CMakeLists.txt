@@ -10,4 +10,5 @@ configure_file(${CMAKE_CURRENT_SOURCE_DIR}/tester.txt
 
 #add_executable(day01_c main.c)
 #add_executable(day01_c printer.c)
-add_executable(day01_c tripref.c)
+#add_executable(day01_c tripref.c)
+add_executable(day01_c copying.c)
