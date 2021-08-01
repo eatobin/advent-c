@@ -8,5 +8,6 @@ configure_file(${CMAKE_CURRENT_SOURCE_DIR}/input.txt
 configure_file(${CMAKE_CURRENT_SOURCE_DIR}/tester.txt
         ${CMAKE_CURRENT_BINARY_DIR} COPYONLY)
 
-add_executable(day01_c main.c)
+#add_executable(day01_c main.c)
 #add_executable(day01_c printer.c)
+add_executable(day01_c tripref.c)
