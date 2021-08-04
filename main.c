@@ -41,7 +41,7 @@ int main(void) {
 //Part b: 5003788
 
 int fuelValue(int mass) {
-    float fvf = (float) mass / 3;
+    float fvf = ((float) mass) / 3.0;
     int fvi = (int) fvf;
     fvi -= 2;
     return fvi;
