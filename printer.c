@@ -7,7 +7,7 @@ int main(void) {
     size_t len = 0;
     ssize_t read;
 
-    fp = fopen("tester.txt", "r");
+    fp = fopen("../resources/tester.txt", "r");
     if (fp == NULL)
         exit(EXIT_FAILURE);
 

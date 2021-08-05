@@ -13,7 +13,7 @@ int main(void) {
     int tot_fuel = 0;
     int tot_fuel_rec = 0;
 
-    fp = fopen("input.txt", "r");
+    fp = fopen("../resources/input.txt", "r");
     if (fp == NULL)
         exit(EXIT_FAILURE);
 
