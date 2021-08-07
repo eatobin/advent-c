@@ -8,7 +8,8 @@ configure_file(resources/input.txt
 configure_file(resources/tester.txt
         ${CMAKE_CURRENT_BINARY_DIR} COPYONLY)
 
-add_executable(advent-c main.c)
+#add_executable(advent-c main.c)
 #add_executable(advent-c printer.c)
 #add_executable(advent-c tripref.c)
 #add_executable(advent-c copying.c)
+add_executable(advent-c src/day1.c)
