@@ -1,7 +1,6 @@
 #include <stdlib.h>
 #include <stdio.h>
 #include <string.h>
-#include <assert.h>
 
 
 void day1_1(const char *in) {
@@ -42,7 +41,6 @@ void day1_2(const char *in) {
         // Module mass
         float mass = strtof(tk, NULL);
 
-        fuel = 0;
         while (1) {
             fuel = mass / 3;
             int x = (int) fuel;
@@ -61,7 +59,7 @@ void day1_2(const char *in) {
     free(r);
 }
 
-int main(int argc, char *argv[]) {
+int main() {
     const char day1_in[] = "68958\n"
                            "82218\n"
                            "54333\n"
