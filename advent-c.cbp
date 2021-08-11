@@ -34,6 +34,7 @@
 		<Unit filename="main.c">
 			<Option compilerVar="CC" />
 		</Unit>
+		<Unit filename="resources/input.txt" />
 		<Extensions />
 	</Project>
 </CodeBlocks_project_file>
