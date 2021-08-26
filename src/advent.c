@@ -13,8 +13,7 @@ int main(void) {
   int    tot_fuel     = 0;
   int    tot_fuel_rec = 0;
 
-  fp = fopen("resources/input.txt", "r");
-  if (fp == NULL) exit(EXIT_FAILURE);
+
 
   while ((getline(&line, &len, fp)) != -1) {
     mass = (int)(strtol(line, NULL, 10));
@@ -40,10 +39,7 @@ int main(void) {
 // Part b: 5003788
 
 int fuelValue(int mass) {
-  float fvf = ((float)mass) / 3.0;
-  int   fvi = (int)fvf;
-  fvi -= 2;
-  return fvi;
+
 }
 
 int recFuelValue(int mass) {
